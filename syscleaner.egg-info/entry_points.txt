@@ -1,0 +1,2 @@
+[console_scripts]
+syscleaner = syscleaner.main:main

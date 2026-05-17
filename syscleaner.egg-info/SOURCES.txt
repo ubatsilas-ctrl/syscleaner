@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+syscleaner/__init__.py
+syscleaner/commands.py
+syscleaner/main.py
+syscleaner/system.py
+syscleaner.egg-info/PKG-INFO
+syscleaner.egg-info/SOURCES.txt
+syscleaner.egg-info/dependency_links.txt
+syscleaner.egg-info/entry_points.txt
+syscleaner.egg-info/top_level.txt
