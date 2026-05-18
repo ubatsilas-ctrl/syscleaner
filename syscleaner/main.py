@@ -1,4 +1,6 @@
 import sys
+import os
+import time
 
 from syscleaner.commands import (
     update_system,
@@ -7,10 +9,16 @@ from syscleaner.commands import (
     repair_system
 )
 
-def main():
+def menu():
+    
     if len(sys.argv) < 2:
-        print("Usage: syscleaner [update|clean|info]")
-        return
+        print("Usage: syscleaner <command>")
+        print("Commands:")
+        print("  update   - Update and upgrade the system")
+        print("  clean    - Clean up unnecessary packages")
+        print("  info     - Show system information")
+        print("  repair   - Repair broken packages")
+        sys.exit(1)
 
     command = sys.argv[1].lower()
 
@@ -24,5 +32,11 @@ def main():
         repair_system()
     else:
         print("Unknown command. Use 'update', 'clean', 'info', or 'repair'.")
+        sys.exit(1)
 
-if __name__ == "__main__":    main()
+def main():
+    menu()
+
+
+if __name__ == "__main__":
+    main()
