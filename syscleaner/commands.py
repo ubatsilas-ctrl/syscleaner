@@ -10,4 +10,8 @@ def clean_system():
 def show_info():
     print(f"OS: {platform.system()}")
     print(f"Kernel Version: {platform.release()}")
-    
+
+def repair_system():
+    os.system("sudo apt --fix-broken install -y")
+    os.system("sudo dpkg --configure -a")
+    os.system("sudo apt update --fix-missing")

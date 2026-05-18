@@ -6,3 +6,7 @@ Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Dynamic: license-file
+
+# syscleaner
+
+esta es una aplicacion para actualizar su sistema para instalarlo debe usar el comando pipx install. adentro de la carpeta
